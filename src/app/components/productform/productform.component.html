@@ -1,0 +1,34 @@
+<form class="container" [formGroup]="productform" (submit)="formOperation($event)" >
+    <div class="mb-3">
+        <label for="name" class="form-label">Proudct Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Product Name" formControlName="name">
+        <span class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label for="price" class="form-label">Product Price</label>
+        <input type="number" class="form-control" id="price" placeholder="Product Price" formControlName="price">
+        <span class="text-danger"></span>
+
+    </div>
+    
+    <div class="mb-3">
+        <label for="quantity" class="form-label">Product Quantity</label>
+        <input type="number" class="form-control" id="quantity" placeholder="Product Quantity"  formControlName="quantity">
+        <span class="text-danger"></span>
+
+    </div>
+    
+    <div class="mb-3">
+        <label for="img" class="form-label">Product Image</label>
+        <input type="text" class="form-control" id="img" placeholder="Product Image" formControlName="img">
+        <span class="text-danger"></span>
+
+    </div>
+    <!-- <p>{{productform.value|json}}</p> -->
+    <input type="submit" value=" {{(formId==0?'Add':'Edit')}}" class="btn btn-success"/>
+</form>
+
+
+    
+    

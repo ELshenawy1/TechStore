@@ -1,0 +1,11 @@
+<div class="container d-flex text-center justify-content-center ">
+    <div class="card" >
+        <img src="{{product.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <h5 class="card-title">{{product.price|currency}}</h5>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a (click)="navigate()" class="btn btn-dark">Back to list</a>
+        </div>
+      </div>
+</div>
